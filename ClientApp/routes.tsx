@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { Home } from './common/Home';
+import { Layout } from './common/Layout';
+import { TheoryView } from './theory/TheoryView';
+import { CodeView } from './code/CodeView';
 
 export const routes = <Layout>
     <Route exact path='/' component={ Home } />
-    <Route path='/counter' component={ Counter } />
-    <Route path='/fetchdata' component={ FetchData } />
+    <Route path='/theory' component={ TheoryView } />
+    <Route path='/code' component={ CodeView } />
 </Layout>;
