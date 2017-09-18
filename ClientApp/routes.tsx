@@ -3,10 +3,12 @@ import { Route } from 'react-router-dom';
 import { Home } from './common/Home';
 import { Layout } from './common/Layout';
 import { TheoryView } from './theory/TheoryView';
+import { Hash } from './theory/Hash';
 import { CodeView } from './code/CodeView';
 
 export const routes = <Layout>
     <Route exact path='/' component={ Home } />
     <Route path='/theory' component={ TheoryView } />
-    <Route path='/code' component={ CodeView } />
+    <Route path='/code' component={CodeView} />
+    <Route path='/hash' component={ Hash } />
 </Layout>;

@@ -28,6 +28,11 @@ export class NavMenu extends React.Component<{}, {}> {
                             </NavLink>
                         </li>
                         <li>
+                            <NavLink to={'/hash'} activeClassName='active'>
+                                <span className='glyphicon glyphicon-education'></span> Hash
+                            </NavLink>
+                        </li>
+                        <li>
                             <NavLink to={ '/code' } activeClassName='active'>
                                 <span className='glyphicon glyphicon-th-list'></span> Code
                             </NavLink>
